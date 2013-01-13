@@ -1,0 +1,29 @@
+{
+    "name":        "bmatzner/marionette-bundle",
+    "type":        "symfony-bundle",
+    "description": "MarionetteJS Bundle for Symfony2",
+    "keywords":    ["backbone", "marionette", "javascript", "symfony"],
+    "homepage":    "http://marionettejs.com/",
+    "license":     "MIT",
+    "authors":     [
+        {
+            "name":     "Bernd Matzner",
+            "email":    "bernd@matznermatzner.de",
+            "homepage": "http://berndmatzner.de"
+        }
+    ],
+    "require":     {
+        "symfony/framework-bundle": ">=2.1",
+        "bmatzner/backbone-bundle":   "*"
+    },
+    "recommend":   {
+        "bmatzner/jquery-bundle": "*",
+        "bmatzner/json2-bundle":  "*"
+    },
+    "autoload":    {
+        "psr-0": {
+            "Bmatzner\\MarionetteBundle": ""
+        }
+    },
+    "target-dir":  "Bmatzner/MarionetteBundle"
+}
