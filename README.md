@@ -2,7 +2,7 @@
 
 ## Current Version
 
-MarionetteJS v1.0.0-rc2
+MarionetteJS v1.0.0-rc3
 
 ## Requirements
 
@@ -67,28 +67,10 @@ $ php app/console assets:install --symlink web
 <script type="text/javascript" src="{{ asset('bundles/bmatznerjquery/js/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('bundles/bmatznerunderscore/js/underscore.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('bundles/bmatznerbackbone/js/backbone.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('bundles/bmatznermarionette/js/marionette.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/bmatznermarionette/js/backbone.marionette.min.js') }}"></script>
 ```
 
-### Install and reference the bundled Marionette package, which includes
-* Backbone.EventBinder
-* Backbone.BabySitter
-* Backbone.Wreqr
-and 
-* Backbone.Marionette itself
-
-``` html
-<script type="text/javascript" src="{{ asset('bundles/bmatznermarionette/js/marionette.min.js') }}"></script>
-```
-
-Alternatively, you can load the separate packages 
-
-``` html
-<script type="text/javascript" src="{{ asset('bundles/bmatznermarionette/js/backbone.eventbinder.js') }}"></script>
-<script type="text/javascript" src="{{ asset('bundles/bmatznermarionette/js/backbone.babysitter.js') }}"></script>
-<script type="text/javascript" src="{{ asset('bundles/bmatznermarionette/js/backbone.wreqr.js') }}"></script>
-<script type="text/javascript" src="{{ asset('bundles/bmatznermarionette/js/backbone.marionette.js') }}"></script>
-```
+Alternatively, use Lo-Dash as a drop-in replacement for Underscore (also available as a Symfony bundle "bmatzner/lodash-bundle")
 
 ## Licenses
 
