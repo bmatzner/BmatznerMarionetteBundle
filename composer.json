@@ -14,11 +14,11 @@
     ],
     "require":     {
         "symfony/framework-bundle": ">=2.1",
-        "bmatzner/backbone-bundle":   "*"
+        "bmatzner/backbone-bundle": "*"
     },
     "recommend":   {
         "bmatzner/jquery-bundle": "*",
-        "bmatzner/json2-bundle":  "*"
+        "bmatzner/json2-bundle": "*"
     },
     "autoload":    {
         "psr-0": {
