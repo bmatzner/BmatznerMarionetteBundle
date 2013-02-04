@@ -14,9 +14,7 @@
     ],
     "require":     {
         "symfony/framework-bundle": ">=2.1",
-        "bmatzner/backbone-bundle": "*"
-    },
-    "recommend":   {
+        "bmatzner/backbone-bundle": "*",
         "bmatzner/jquery-bundle": "*",
         "bmatzner/json2-bundle": "*"
     },
