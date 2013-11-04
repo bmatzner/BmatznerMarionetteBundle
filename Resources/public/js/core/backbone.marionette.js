@@ -762,8 +762,13 @@ Marionette.View = Backbone.View.extend({
     _.bindAll(this, "render");
 
     var args = Array.prototype.slice.apply(arguments);
+
+    // this exposes view options to the view initializer
+    // this is a backfill since backbone removed the assignment
+    // of this.options
+    // at some point however this may be removed
+    this.options = options || {};
     Backbone.View.prototype.constructor.apply(this, args);
-    this.options = options;
 
     Marionette.MonitorDOMRefresh(this);
     this.listenTo(this, "show", this.onShowCalled, this);
@@ -823,8 +828,8 @@ Marionette.View = Backbone.View.extend({
           var shouldPrevent = hasOptions ? value.preventDefault : prevent;
           var shouldStop = hasOptions ? value.stopPropagation : stop;
 
-          if (shouldPrevent && prevent) { prevent(); }
-          if (shouldStop && stop) { stop(); }
+          if (shouldPrevent && prevent) { prevent.apply(e); }
+          if (shouldStop && stop) { stop.apply(e); }
         }
 
         // build the args for the event
