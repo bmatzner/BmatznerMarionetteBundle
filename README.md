@@ -18,7 +18,7 @@ MarionetteJS requires Backbone and a number of dependencies included in this pac
 {
     "require": {
 		// ...
-        "bmatzner/marionette-bundle": "*"
+        "bmatzner/marionette-bundle": "~1.2"
     }
 }
 ```
