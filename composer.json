@@ -14,8 +14,8 @@
     ],
     "require":     {
         "symfony/framework-bundle": ">=2.1",
-        "bmatzner/backbone-bundle": "*",
-        "bmatzner/jquery-bundle": "*",
+        "bmatzner/backbone-bundle": "~1.1",
+        "bmatzner/jquery-bundle": "~1.9",
         "bmatzner/json2-bundle": "*"
     },
     "autoload":    {
