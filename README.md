@@ -2,7 +2,7 @@
 
 ## Current Version
 
-MarionetteJS v1.4.0
+MarionetteJS v1.5.0
 
 ## Requirements
 
