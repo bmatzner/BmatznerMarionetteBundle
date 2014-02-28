@@ -2,7 +2,7 @@
 
 ## Current Version
 
-MarionetteJS v1.5.0
+MarionetteJS v1.6.2
 
 ## Requirements
 
@@ -18,7 +18,7 @@ MarionetteJS requires Backbone and a number of dependencies included in this pac
 {
     "require": {
 		// ...
-        "bmatzner/marionette-bundle": "~1.2"
+        "bmatzner/marionette-bundle": "~1.6"
     }
 }
 ```
