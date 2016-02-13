@@ -32,7 +32,11 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Bmatzner\MarionetteBundle\BmatznerMarionetteBundle(),
+	new Bmatzner\MarionetteBundle\BmatznerMarionetteBundle(),
+	new Bmatzner\UnderscoreBundle\BmatznerUnderscoreBundle(),
+	new Bmatzner\Json2Bundle\BmatznerJson2Bundle(),
+	new Bmatzner\JQueryBundle\BmatznerJQueryBundle(),
+	new Bmatzner\BackboneBundle\BmatznerBackboneBundle(),
         // ...
     );
 }
